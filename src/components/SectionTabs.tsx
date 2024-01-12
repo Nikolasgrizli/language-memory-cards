@@ -15,17 +15,21 @@ export default function SectionTabs() {
 
     return (
         <section>
-          <Button btnClick={() => handleClick('way')} isActive={tabs === 'way'}>
-          way
-          </Button>
-          <Button btnClick={() => handleClick('easy')} isActive={tabs === 'easy'}>
-          easy
-          </Button>
-          <Button btnClick={() => handleClick('program')} isActive={tabs === 'program'}>
-          program
-          </Button>
+            <div className="container">
 
-          <p>{textBelow}</p>
+                <Button btnClick={() => handleClick('way')} isActive={tabs === 'way'}>
+                way
+                </Button>
+                <Button btnClick={() => handleClick('easy')} isActive={tabs === 'easy'}>
+                easy
+                </Button>
+                <Button btnClick={() => handleClick('program')} isActive={tabs === 'program'}>
+                program
+                </Button>
+
+                <p>{textBelow}</p>
+
+            </div>
         </section>
     )
 }
