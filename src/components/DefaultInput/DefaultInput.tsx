@@ -1,24 +1,21 @@
 import { Input } from "@material-tailwind/react";
 
-type DefaultInputProps = {
+type DefaultInputProps =  {
     label: string;
     value: string;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     type: string;
     name: string;
     placeholder: string;
+    error: boolean
 }
 
 
-export default function DefaultInput({ label, value, onChange, type, name, placeholder}: DefaultInputProps) {
+export default function DefaultInput({   ...props}: DefaultInputProps) {
     return (
         <Input
         variant="outlined"
-        type={type}
-        name={name}
-        label={label}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}/>
+        {...props}
+        />
     );
 }

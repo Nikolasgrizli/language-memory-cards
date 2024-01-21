@@ -5,11 +5,14 @@ export default function PageNav({ active, onPageChange }) {
       <section>
         <div className="container">
             <div className="flex">
-                <Button className={"flex-1"} isActive={active==='main'} btnClick={() => onPageChange('main')}>
+                <Button className={"flex-1"} isActive={active==='main'} onClick={() => onPageChange('main')}>
                     Main page
                 </Button>
-                <Button className={"flex-1"} isActive={active==="second"} btnClick={() => onPageChange('second')}>
+                <Button className={"flex-1"} isActive={active==="second"} onClick={() => onPageChange('second')}>
                     Feedback
+                </Button>
+                <Button className={"flex-1"} isActive={active==="ref"} onClick={() => onPageChange('ref')}>
+                    Check Ref
                 </Button>
 
             </div>
