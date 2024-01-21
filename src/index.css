@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&family=Titillium+Web&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 * {
   margin: 0;
@@ -10,17 +13,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  height: 50px;
-  display: flex;
-  padding: 0 2rem;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  background: #fafafa;
-}
 
-main {
+
+.container {
   max-width: 850px;
   margin: 0 auto;
   padding: 1rem;
